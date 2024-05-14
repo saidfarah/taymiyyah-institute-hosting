@@ -1,0 +1,20 @@
+body {
+    background-color: #14213d;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container img {
+    width: 300px; /* Adjust width as needed */
+    display: block;
+    margin: 0 auto;
+}
+
+.container p {
+    font-size: 24px;
+}
