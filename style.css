@@ -10,11 +10,29 @@ body {
 }
 
 .container img {
-    width: 300px; /* Adjust width as needed */
-    display: block;
-    margin: 0 auto;
+    opacity: 0; /* Initially hide the image */
+    animation: fadeInImage 2s forwards; /* Apply the fade-in animation */
 }
 
 .container p {
-    font-size: 24px;
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInText 2s forwards 0.5s; /* Apply the fade-in animation with a 0.5s delay */
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
